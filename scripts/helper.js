@@ -5,7 +5,7 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const urlParams = Object.fromEntries(urlSearchParams.entries());
 
 const assetsDomain = scriptParams.local
-  ? 'https://website-stijn.frits.io'
+  ? 'https://website-niko.frits.io'
   : urlParams.assets_domain
       ? urlParams.assets_domain
       : 'https://www.hypotheekadviesconsumentenbond.nl'
