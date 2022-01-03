@@ -18,10 +18,12 @@ const domainOverride = scriptParams.local
 
 window.fritsAppOptions = { domainOverride };
 
-const vendor = document.createElement("script");
-vendor.setAttribute("src", `${assetsPath}/vendor.js`);
-document.body.appendChild(vendor);
+const addScript = (filename) => {
+  const newScript = document.createElement("script");
+  newScript.setAttribute("src", `${assetsPath}/${filename}.js`);
+  document.body.appendChild(newScript);
+}
 
-const app = document.createElement("script");
-app.setAttribute("src", `${assetsPath}/${scriptParams.app}.js`);
-document.body.appendChild(app);
+addScript('runtime');
+addScript('vendor');
+addScript(scriptParams.app);
