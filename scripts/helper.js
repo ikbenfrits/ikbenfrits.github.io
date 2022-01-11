@@ -24,6 +24,8 @@ const addScript = (filename) => {
   document.body.appendChild(newScript);
 }
 
-addScript('runtime');
+if (scriptParams.local)
+  addScript('runtime');
+  
 addScript('vendor');
 addScript(scriptParams.app);
