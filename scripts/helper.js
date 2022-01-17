@@ -26,6 +26,7 @@ const addScript = (filename) => {
 
 if (scriptParams.local)
   addScript('runtime');
+else
+  addScript('vendor');
   
-addScript('vendor');
 addScript(scriptParams.app);
