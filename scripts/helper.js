@@ -6,7 +6,7 @@ const urlParams = Object.fromEntries(urlSearchParams.entries());
 
 const assetsPath = urlParams.assets_domain
   ?? scriptParams.local
-    ? 'https://localhost:3901/webpack/vue/'
+    ? 'https://localhost:3901/webpack/vue'
     : 'https://www.hypotheekadviesconsumentenbond.nl/apps/v2'
 
 const domainOverride = urlParams.iframe_domain
