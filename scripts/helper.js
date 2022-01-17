@@ -4,11 +4,13 @@ const scriptParams = Object.fromEntries(scriptSearchParams.entries());
 const urlSearchParams = new URLSearchParams(window.location.search);
 const urlParams = Object.fromEntries(urlSearchParams.entries());
 
+// assets path of tiny js app, old vue build
 const assetsPath = urlParams.assets_domain
   ?? scriptParams.local
-    ? 'https://localhost:3901/webpack/vue'
+    ? 'https://localhost:3801/webpack/vue'
     : 'https://www.hypotheekadviesconsumentenbond.nl/apps/v2'
 
+// domain of the iframe, refering to the nuxt resource
 const domainOverride = urlParams.iframe_domain
   ?? scriptParams.local
     ? 'https://localhost:3901'
