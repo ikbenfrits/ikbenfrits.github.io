@@ -4,17 +4,15 @@ const scriptParams = Object.fromEntries(scriptSearchParams.entries());
 const urlSearchParams = new URLSearchParams(window.location.search);
 const urlParams = Object.fromEntries(urlSearchParams.entries());
 
-const assetsDomain = scriptParams.local
-  ? 'https://cbhs-website-fe-57.cbhs.io'
-  : urlParams.assets_domain
-      ? urlParams.assets_domain
-      : 'https://www.hypotheekadviesconsumentenbond.nl'
+const assetsPath = urlParams.assets_domain
+  ?? scriptParams.local
+    ? 'https://localhost:3901/webpack/vue/'
+    : 'https://www.hypotheekadviesconsumentenbond.nl/apps/v2'
 
-const assetsPath = `${assetsDomain}/apps/v2`;
-
-const domainOverride = scriptParams.local
-  ? 'https://localhost:3901'
-  : urlParams.iframe_domain
+const domainOverride = urlParams.iframe_domain
+  ?? scriptParams.local
+    ? 'https://localhost:3901'
+    : undefined;
 
 window.fritsAppOptions = { domainOverride };
 
