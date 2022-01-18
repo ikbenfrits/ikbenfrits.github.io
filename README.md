@@ -6,4 +6,4 @@ Static pages project Ikbenfrits.
 
 ## CBHS Tools Test Pages
 
-Read on here: [pages/cbhs/README.md](pages/cbhs/README.md)
+Read on here: [pages/README.md](pages/README.md)
