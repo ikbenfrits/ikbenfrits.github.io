@@ -12,7 +12,9 @@ Pages where we can test cbhs affiliate tools with. Key is to have it run on a di
 
 ## Add new test page for a tool
 
-Check out `/nuxt/server_middleware/nuxt_api/html/index.js` in `frits-website` project. Take element and tool identifiers to make up new html.
+Check out `/nuxt/server_middleware/nuxt_api/html/index.js` in `frits-website` project. Take element and tool identifiers to make up new index.html and local.html.
 
-URL Params Example:
-- https://ikbenfrits.github.io/pages/cbhs/oversluiten/?iframe_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io&assets_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io
+- Example URL Local: https://ikbenfrits.github.io/pages/cbhs/maximale-hypotheek/local
+
+- Examples URL with params:
+https://ikbenfrits.github.io/pages/cbhs/oversluiten/?iframe_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io&assets_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io
