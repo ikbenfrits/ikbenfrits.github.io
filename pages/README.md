@@ -14,7 +14,11 @@ Pages where we can test cbhs affiliate tools with. Key is to have it run on a di
 
 Check out `/nuxt/server_middleware/nuxt_api/html/index.js` in `frits-website` project. Take element and tool identifiers to make up new index.html and local.html.
 
-- Example URL Local: https://ikbenfrits.github.io/pages/cbhs/maximale-hypotheek/local
+### Example URL Local
+https://ikbenfrits.github.io/pages/cbhs/maximale-hypotheek/local
 
-- Examples URL with params:
-https://ikbenfrits.github.io/pages/cbhs/oversluiten/?iframe_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io&assets_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io
+### Example URL Local BrowserStack:
+https://ikbenfrits.github.io/pages/cbhs/oversluiten/local?iframe_domain=https%3A%2F%2Fbs-local.com%3A3901&assets_domain=https%3A%2F%2Fbs-local.com%3A3801%2Fwebpack%2Fvue
+
+### Example URL with params:
+https://ikbenfrits.github.io/pages/cbhs/oversluiten/?iframe_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io/&assets_domain=https%3A%2F%2Fcbhs-website-fe-57.cbhs.io%2Fapps%2Fv2
