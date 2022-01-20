@@ -16,7 +16,11 @@ const domainOverride = urlParams.iframe_domain
     ? 'https://localhost:3901'
     : undefined);
 
-window.fritsAppOptions = { domainOverride };
+window.fritsAppOptions = { 
+  domainOverride,
+  sentryEnvName: 'development',
+  sentryDelivery: true
+ };
 
 const addScript = (filename) => {
   const newScript = document.createElement("script");
