@@ -5,19 +5,20 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const urlParams = Object.fromEntries(urlSearchParams.entries());
 
 // assets path of tiny js app, old vue build
-const assetsPath = urlParams.assets_domain
+const assetsPath = urlParams.assets_path
   ?? (scriptParams.local
     ? 'https://localhost:3801/webpack/vue'
     : 'https://www.hypotheekadviesconsumentenbond.nl/apps/v2');
 
 // domain of the iframe, refering to the nuxt resource
-const domainOverride = urlParams.iframe_domain
+const iframeDomain = urlParams.iframe_domain
   ?? (scriptParams.local
     ? 'https://localhost:3901'
     : undefined);
 
 window.fritsAppOptions = { 
-  domainOverride,
+  iframeDomain,
+  assetsPath,
   sentryEnvName: 'development',
   sentryDelivery: true
  };
