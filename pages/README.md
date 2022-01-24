@@ -1,6 +1,8 @@
 # CBHS Tools
 
-Pages where we can test cbhs affiliate tools with. Key is to have it run on a different domain, so we can verify CORS issues and cookies behavior.
+Pages where we can test cbhs affiliate tools with. Key is to have it run on a different domain, so we can verify CORS issues and cookies behavior. For more details, read [How to Use CBHS Tools](https://ikbenfrits.atlassian.net/wiki/spaces/FRON/pages/1367080961/How+to+use+CBHS+tools) on the Ikbenfrits Confluence.
+
+Currently available:
 
 - [Oversluiten tool (Refinance tool)](https://ikbenfrits.github.io/pages/cbhs/oversluiten/)
 - [Rentemiddelen tool (Rate averaging tool)](https://ikbenfrits.github.io/pages/cbhs/rentemiddelen/)
