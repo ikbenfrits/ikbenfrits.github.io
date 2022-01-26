@@ -31,3 +31,8 @@ https://ikbenfrits.github.io/pages/cbhs/rentevergelijker/?iframe_domain=https%3A
 https://ikbenfrits.github.io/pages/cbhs/maximale-hypotheek/?iframe_domain=https%3A%2F%2Fwww.cbhs.io&assets_path=https%3A%2F%2Fwww.cbhs.io%2Fapps%2Fv2
 
 This above url is used in automatic testing in CBHS Gitlab CI pipelines. So it should always work, behind vpn.
+
+### URL when project run locally
+http://127.0.0.1:7700/pages/cbhs/maximale-hypotheek/local.html
+
+When serving this project locally, visit URL's with `.html` at the end.
