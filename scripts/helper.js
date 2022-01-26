@@ -1,3 +1,32 @@
+const log = (msg, data) => {
+  console.log('[ikbenfrits.github.io helper] ' + msg, data);
+}
+
+const addScript = (filename) => {
+  const newScript = document.createElement("script");
+  newScript.setAttribute("src", `${assetsPath}/${filename}.js`);
+  document.body.appendChild(newScript);
+}
+
+// inject shared style
+const injectStyle = () => {
+  const linkStyle = document.createElement('link');
+  linkStyle.rel = stylesheet;
+  linkStyle.href = '/pages/style.css';
+
+  document.head.appendChild(linkStyle);
+}
+
+// render notification about the environment
+const renderNotification = () => {
+  const el = document.createElement('div');
+  el.classList.add('test-page-notification');
+
+  el.innerHTML = '';
+
+  document.body.appendChild(el);
+}
+
 const scriptSearchParams = new URLSearchParams(`?${document.currentScript.src.split('?')[1]}`);
 const scriptParams = Object.fromEntries(scriptSearchParams.entries());
 
@@ -21,13 +50,7 @@ window.fritsAppOptions = {
   assetsPath,
   sentryEnvName: 'development',
   sentryDelivery: true
- };
-
-const addScript = (filename) => {
-  const newScript = document.createElement("script");
-  newScript.setAttribute("src", `${assetsPath}/${filename}.js`);
-  document.body.appendChild(newScript);
-}
+};
 
 if (scriptParams.local)
   addScript('runtime');
@@ -35,3 +58,8 @@ else
   addScript('vendor');
   
 addScript(scriptParams.app);
+
+injectStyle();
+renderNotification();
+
+log('window.fritsAppOptions', window.fritsAppOptions);
