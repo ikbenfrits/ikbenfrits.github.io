@@ -65,7 +65,8 @@ window.fritsAppOptions = {
   iframeDomain,
   assetsPath,
   sentryEnvName: 'development',
-  sentryDelivery: true
+  sentryDelivery: true,
+  loggerLevel: 'info',
 };
 
 if (scriptParams.local)
