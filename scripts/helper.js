@@ -69,7 +69,7 @@ window.fritsAppOptions = {
   loggerLevel: 'info',
 };
 
-if (scriptParams.local)
+if (scriptParams.local && !urlParams.assets_path)
   addScript('runtime');
 else
   addScript('vendor');
