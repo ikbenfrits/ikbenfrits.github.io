@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Sample iFrame page</title>
+  </head>
+  <body>
+    <h1>Maximale hypotheek berekenen</h1>
+    <div id="tool-max-mortgage-inline"></div>
+    <script>
+      // Set UTM parameters
+      var fritsAppOptions = {
+        utm: {
+          source: 'amvest',
+          campaign: 'glashaven',
+        }
+      };
+    </script>
+    <script src="https://app.ikbenfrits.nl/apps/v2/vendor.js"></script>
+    <script src="https://app.ikbenfrits.nl/apps/v2/tool_max_mortgage_inline.js"></script>
+  </body>
+</html>
